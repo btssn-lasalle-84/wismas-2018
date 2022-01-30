@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS:  Fichier source de wismasihm.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">wismasihm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="wismasihm_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00013"></a>00013 <span class="preprocessor">#ifndef WISMASIHM_H</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#define WISMASIHM_H</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;QWidget&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;QTimer&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;ui_wismasihm.h&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="structures_8h.html">structures.h</a>&quot;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &quot;<a class="code" href="stationmeteo_8h.html" title="Déclaration de la classe StationMeteo.">stationmeteo.h</a>&quot;</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;Phonon/MediaObject&gt;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;Phonon/VideoWidget&gt;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;Phonon/VideoPlayer&gt;</span>
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="comment">//#define DEBUG</span>
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="keyword">class </span><a class="code" href="class_station_meteo.html" title="Gére les données météos d&#39;une station d&#39;un site.">StationMeteo</a>;
+<a name="l00031"></a>00031 <span class="keyword">class </span><a class="code" href="class_port_x_bee.html" title="Communique avec les stations météo des sites via un port série virtuel.">PortXBee</a>;
+<a name="l00032"></a>00032 <span class="keyword">class </span><a class="code" href="class_port_panneau.html" title="Communique avec les stations météo des sites via un port série virtuel.">PortPanneau</a>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keyword">namespace </span>Ui
+<a name="l00035"></a>00035 {
+<a name="l00036"></a>00036     <span class="keyword">class </span><a class="code" href="class_w_i_s_m_a_s_i_h_m.html" title="Gère l&#39;interface des sites de haute montagne.">WISMASIHM</a>;
+<a name="l00037"></a>00037 }
+<a name="l00038"></a>00038 
+<a name="l00051"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html">00051</a> <span class="keyword">class </span><a class="code" href="class_w_i_s_m_a_s_i_h_m.html" title="Gère l&#39;interface des sites de haute montagne.">WISMASIHM</a> : <span class="keyword">public</span> QWidget
+<a name="l00052"></a>00052 {
+<a name="l00053"></a>00053     Q_OBJECT
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055     <span class="keyword">public</span>:
+<a name="l00056"></a>00056         <span class="keyword">explicit</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ab3452d45504905d1d6132f661207be22" title="WISMASIHM::WISMASIHM.">WISMASIHM</a>(QWidget *parent = 0);
+<a name="l00057"></a>00057         <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#afac3fc057ceba367226d401b9c1d679f" title="WISMASIHM::~WISMASIHM.">~WISMASIHM</a>();
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059         QString <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aeef81319033d8ff6c4d4742899ed2552" title="WISMASIHM::getMinute.">getMinute</a>();
+<a name="l00060"></a>00060         QString <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a8681b2d8b8b285b4e5017a79ea6d9516" title="WISMASIHM::getHeure.">getHeure</a>();
+<a name="l00061"></a>00061         QString <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ac7d0b85cd4bf8317a1f21f7e9c7018b4">getDate</a>();
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063     <span class="keyword">private</span>:
+<a name="l00064"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ab1f7b6b9cd72b4fb313644c4f1121b92">00064</a>         Ui::WISMASIHM* <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ab1f7b6b9cd72b4fb313644c4f1121b92">ui</a>;
+<a name="l00065"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a0b397a00981dbd86cdabcca2339a153a">00065</a>         <a class="code" href="class_station_meteo.html" title="Gére les données météos d&#39;une station d&#39;un site.">StationMeteo</a>* <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a0b397a00981dbd86cdabcca2339a153a" title="Association vers la classe StationMeteo.">station</a>; 
+<a name="l00066"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa8f6922867f5fb646876658fee041d03">00066</a>         QVector&lt;StationMeteo*&gt; <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa8f6922867f5fb646876658fee041d03">stations</a>;
+<a name="l00067"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a337c0d0adc117fc15f1ec0a6a1bfeb63">00067</a>         <a class="code" href="class_port_x_bee.html" title="Communique avec les stations météo des sites via un port série virtuel.">PortXBee</a> *<a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a337c0d0adc117fc15f1ec0a6a1bfeb63" title="Association vers la classe PortXBee.">portXBee</a>; 
+<a name="l00068"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#abb76f2bbe8ffe5c0c5a131787eb067a3">00068</a>         <a class="code" href="class_port_panneau.html" title="Communique avec les stations météo des sites via un port série virtuel.">PortPanneau</a> *<a class="code" href="class_w_i_s_m_a_s_i_h_m.html#abb76f2bbe8ffe5c0c5a131787eb067a3" title="Association vers la classe PortPanneau.">portPanneau</a>; 
+<a name="l00069"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a4b3877b85bde476e339d3d6f80e5a9a1">00069</a>         <a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html" title="fixe la configuration de départ de l&#39;application.">CONFIG_LOGICIEL</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a4b3877b85bde476e339d3d6f80e5a9a1">config</a>;
+<a name="l00070"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a5409260e9eebc5e47add185ea99491bc">00070</a>         <a class="code" href="struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html">CONFIG_ENREGISTREMENT</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a5409260e9eebc5e47add185ea99491bc">enregistrement_config</a>;
+<a name="l00071"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa11c79b96bc4c0c89492d8fb2cc342ae">00071</a>         <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html">PARAM_COMMUNICATION</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa11c79b96bc4c0c89492d8fb2cc342ae">param_communication</a>;
+<a name="l00072"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#abb7fc5f6424f482d9876f130d672d2b4">00072</a>         <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html" title="fixe les paramètres du périphérique panneau lumineux. port QString, int baud_rate, int data_bit, int stop, int parity">PARAM_PANNEAU</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#abb7fc5f6424f482d9876f130d672d2b4">param_panneau</a>;
+<a name="l00073"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a991e3be0b75bdbe931bd92b6675299f4">00073</a>         <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html" title="fixe la configuration de l&#39;affichage des informations sur le panneau lumineux. titre QString...">AFFICHAGE_PANNEAU</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a991e3be0b75bdbe931bd92b6675299f4">affichage_panneau</a>;
+<a name="l00074"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a43676ea2eabe040e7d924fea11d9834c">00074</a>         <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html" title="fixe la configuration de l&#39;affichage des informations sur le panneau lumineux. titre QString...">AFFICHAGE_PANNEAU</a> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a43676ea2eabe040e7d924fea11d9834c">panneau</a>;
+<a name="l00075"></a>00075 
+<a name="l00076"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#acc129f5543e9c35f75cfae00587f5363">00076</a>         Phonon::MediaObject *<a class="code" href="class_w_i_s_m_a_s_i_h_m.html#acc129f5543e9c35f75cfae00587f5363">media</a>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a8969b29467a538e654cc55166ae965a9">00078</a>         QTimer* <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a8969b29467a538e654cc55166ae965a9" title="Timer pour le rafraichissement de la fenetre principale.">m_timer</a>; 
+<a name="l00079"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a52d80bfa90f0d9d0edc05cefee97db4a">00079</a>         <span class="keywordtype">int</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a52d80bfa90f0d9d0edc05cefee97db4a">idStationCourante</a>;
+<a name="l00080"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a5b45d707c6708df8bceb939dace78f97">00080</a>         <span class="keywordtype">long</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a5b45d707c6708df8bceb939dace78f97">m_valeur</a>;
+<a name="l00081"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a3175a9c7e9fb5c9b9e697e2ce0ce7e80">00081</a>         <span class="keywordtype">long</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a3175a9c7e9fb5c9b9e697e2ce0ce7e80">pagePanneau_compteur</a>;
+<a name="l00082"></a><a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa0667538fc8bac6d462496fb60f6e641">00082</a>         <span class="keywordtype">int</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa0667538fc8bac6d462496fb60f6e641">nb_page</a>;
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a495b86be95e3e856f2c4bd68b2bd6661" title="WISMASIHM::afficherConditionsMeteoStation affiche sur l’écran de diffusion (écran TV) l’ensemble des ...">afficherConditionsMeteoStation</a>();
+<a name="l00085"></a>00085         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ab97c09bbadce8e3f73eda20469bc3bbb" title="WISMASIHM::afficherDonneesMeteoStation assure l&#39;affichage des mesures de la station méteo d&#39;un site...">afficherDonneesMeteoStation</a>();
+<a name="l00086"></a>00086         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#af1aa810418bdb51a9407bdaaa14e33cf" title="SLOT WISMASIHM::afficherInformationsMeteoStation.">afficherInformationsMeteoStation</a>();
+<a name="l00087"></a>00087         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a3595a371deacbacc90ecf47d796b4ea2" title="WISMASIHM::demarrerAffichagePanneau affiche sur le panneau lumineux la synthèse des données météos d&#39;...">demarrerAffichagePanneau</a>();
+<a name="l00088"></a>00088         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a77250096db972d7f44c4c87d6beca1c0" title="WISMASIHM::afficherConseilsFartage affiche les conseils de fartage.">afficherConseilsFartage</a>();
+<a name="l00089"></a>00089         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a9d8d97842952d52a26d965fc2a2e40aa" title="WISMASIHM::afficherHorodatage met à jour l&#39;affichage de la date et l&#39;heure.">afficherHorodatage</a>();
+<a name="l00090"></a>00090         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aadc0d41fcfe0c3d640c5a76786756bf8" title="WISMASIHM::changerStation change de station.">changerStation</a>();        
+<a name="l00091"></a>00091         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aeec6f8183a689326e71e926031670f08" title="démarre une vidéo">demarrerVideo</a>();
+<a name="l00092"></a>00092         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a2c947570fbbcea4c3b5e2a5932fc347c">recupererDerniereVideo</a>();
+<a name="l00093"></a>00093         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a0259ce94eefbc2aec963fb1229fa4bec" title="charge la vidéo enregistrée sur le serveur">chargerVideo</a>();
+<a name="l00094"></a>00094         <span class="keywordtype">bool</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#ad13952e070a465962d1cbb657270e781" title="WISMASIHM::chargerFichierConfig.">chargerFichierConfig</a>();
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096     <span class="keyword">private</span> slots:
+<a name="l00097"></a>00097         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a283e891b6720efdc4760a23dacbcbbaa" title="SLOT WISMASIHM::rafraichir rafraichir l&#39;IHM.">rafraichir</a>();        
+<a name="l00098"></a>00098         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#a130c5ffafc3256ef51819b9fd779e8e9" title="SLOT permettant de recharger la vidéo pour une lecture en boucle.">rechargerVideo</a>();
+<a name="l00099"></a>00099         <span class="keywordtype">void</span> <a class="code" href="class_w_i_s_m_a_s_i_h_m.html#aa8e341b43cb11edcea992026c4aec7de" title="SLOT permettant de relire la vidéo.">redemarrerVideo</a>();
+<a name="l00100"></a>00100 };
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="preprocessor">#endif // WISMASIHM_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:59:17 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

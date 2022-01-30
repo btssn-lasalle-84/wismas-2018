@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS:  Fichier source de stationmeteo.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">stationmeteo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="stationmeteo_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef STATIONMETEO_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define STATIONMETEO_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;QVector&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;QTime&gt;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;QTimer&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;QDateTime&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;QDebug&gt;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="structures_8h.html">structures.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &quot;<a class="code" href="wismasprotocole_8h.html" title="Déclaration de la classe WISMASProtocole.">wismasprotocole.h</a>&quot;</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="stationmeteo_8h.html#a2fa43a15e3349638ac05bc74ba9ebe6a">00026</a> <span class="preprocessor">#define SKI_ALPIN 1</span>
+<a name="l00027"></a><a class="code" href="stationmeteo_8h.html#aad940d22cc6ad7fddb269234236fcfb1">00027</a> <span class="preprocessor"></span><span class="preprocessor">#define SKI_DE_FOND 2</span>
+<a name="l00028"></a><a class="code" href="stationmeteo_8h.html#a16fc26471a29ee100ab174b01f71ceaa">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define SNOW_SKITE 3</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span>
+<a name="l00030"></a><a class="code" href="stationmeteo_8h.html#a76541a58396258ee907c1c28c4be57e8">00030</a> <span class="preprocessor">#define DIRECTION_VENT 1</span>
+<a name="l00031"></a><a class="code" href="stationmeteo_8h.html#a79ceab8aae98983f1e001385d2751321">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define VITESSE_VENT 2</span>
+<a name="l00032"></a><a class="code" href="stationmeteo_8h.html#a8e2ea4078dc2b412d6b8890b6a8599ae">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define TEMPERATURE_AIR 3</span>
+<a name="l00033"></a><a class="code" href="stationmeteo_8h.html#ac22b8217ab1b2c3b84dbd4359fd3be28">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define TEMPERATURE_NEIGE 4</span>
+<a name="l00034"></a><a class="code" href="stationmeteo_8h.html#a68cf6e263be3eae7a763311e564765c7">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define HAUTEUR_NEIGE 5</span>
+<a name="l00035"></a><a class="code" href="stationmeteo_8h.html#abdf7916d42ad0f1acdae0f843e3e27f2">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define HUMIDITE 6</span>
+<a name="l00036"></a><a class="code" href="stationmeteo_8h.html#adf9908c02b58c9579a4cead916ee0175">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define PRESSION_AIR 7</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="comment">//#define DEBUG</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;
+<a name="l00042"></a>00042 
+<a name="l00048"></a><a class="code" href="class_station_meteo.html">00048</a> <span class="keyword">class </span><a class="code" href="class_station_meteo.html" title="Gére les données météos d&#39;une station d&#39;un site.">StationMeteo</a> : <span class="keyword">public</span> QObject
+<a name="l00049"></a>00049 {
+<a name="l00050"></a>00050     Q_OBJECT
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052     <span class="keyword">private</span>:
+<a name="l00053"></a><a class="code" href="class_station_meteo.html#a6b3fd88d644160e1de91ff75517aa6c0">00053</a>         <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a> *<a class="code" href="class_station_meteo.html#a6b3fd88d644160e1de91ff75517aa6c0" title="Association vers la classe BaseDeDonnees.">bdd</a>; 
+<a name="l00054"></a><a class="code" href="class_station_meteo.html#af1b42910b829ff3073507bbf3826d16a">00054</a>         <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#af1b42910b829ff3073507bbf3826d16a">idSite</a>; 
+<a name="l00055"></a><a class="code" href="class_station_meteo.html#a12bc0812f5f6018aef1267063c3479c2">00055</a>         <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#a12bc0812f5f6018aef1267063c3479c2">typeSite</a>; 
+<a name="l00056"></a><a class="code" href="class_station_meteo.html#ae5b8015d87fe5c2fc37b1eb4efddc196">00056</a>         QString <a class="code" href="class_station_meteo.html#ae5b8015d87fe5c2fc37b1eb4efddc196">nomSite</a>;
+<a name="l00057"></a><a class="code" href="class_station_meteo.html#a3ce4df3fcac66fc9dc2bf1ef58212395">00057</a>         QString <a class="code" href="class_station_meteo.html#a3ce4df3fcac66fc9dc2bf1ef58212395">cheminVideo</a>;
+<a name="l00058"></a><a class="code" href="class_station_meteo.html#a49dea2c74ec3aa89780c5cd909175ed0">00058</a>         QString <a class="code" href="class_station_meteo.html#a49dea2c74ec3aa89780c5cd909175ed0">couleurTextPanneau</a>;
+<a name="l00059"></a><a class="code" href="class_station_meteo.html#aaf041b861ae4636838fc100a8a2ff022">00059</a>         <a class="code" href="class_w_i_s_m_a_s_protocole.html" title="Gère la transmission entre les sites.">WISMASProtocole</a>* <a class="code" href="class_station_meteo.html#aaf041b861ae4636838fc100a8a2ff022" title="Association vers la classe WISMASProtocole.">protocole</a>; 
+<a name="l00060"></a><a class="code" href="class_station_meteo.html#a750fa68dfe940aaff28d1534fa41be40">00060</a>         <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station">DONNEES_STATION</a> <a class="code" href="class_station_meteo.html#a750fa68dfe940aaff28d1534fa41be40">donneeStation</a>;
+<a name="l00061"></a><a class="code" href="class_station_meteo.html#ab63668452db0f031a8d4cb79bdc1cebf">00061</a>         QVector&lt;DONNEES_STATION&gt; <a class="code" href="class_station_meteo.html#ab63668452db0f031a8d4cb79bdc1cebf">donneesStation</a>;
+<a name="l00062"></a><a class="code" href="class_station_meteo.html#a261a794e2216355030d889fd41a9f92f">00062</a>         QTime <a class="code" href="class_station_meteo.html#a261a794e2216355030d889fd41a9f92f">heureDebut</a>;
+<a name="l00063"></a><a class="code" href="class_station_meteo.html#a0d32cdc1a0cd3d257593b5f17dfbbbda">00063</a>         QTime <a class="code" href="class_station_meteo.html#a0d32cdc1a0cd3d257593b5f17dfbbbda">heureFin</a>;
+<a name="l00064"></a><a class="code" href="class_station_meteo.html#a532493868a153b51ab2142d53adc3ec2">00064</a>         QTimer* <a class="code" href="class_station_meteo.html#a532493868a153b51ab2142d53adc3ec2">timer_baseDeDonnees</a>;
+<a name="l00065"></a><a class="code" href="class_station_meteo.html#aa227b16b7edf30f79dac397e4beac3cb">00065</a>         QString <a class="code" href="class_station_meteo.html#aa227b16b7edf30f79dac397e4beac3cb">directionVent</a>;
+<a name="l00066"></a><a class="code" href="class_station_meteo.html#a1ecc73680d37832793f13f05dc00d8d0">00066</a>         QString <a class="code" href="class_station_meteo.html#a1ecc73680d37832793f13f05dc00d8d0">vitesseVent</a>;
+<a name="l00067"></a><a class="code" href="class_station_meteo.html#a3de466e48120d9e4787a62d5eb8209f4">00067</a>         QString <a class="code" href="class_station_meteo.html#a3de466e48120d9e4787a62d5eb8209f4">temperatureAir</a>;
+<a name="l00068"></a><a class="code" href="class_station_meteo.html#add5475553e75278d84324e6964b90f41">00068</a>         QString <a class="code" href="class_station_meteo.html#add5475553e75278d84324e6964b90f41">temperatureNeige</a>;
+<a name="l00069"></a><a class="code" href="class_station_meteo.html#a1827b33f3edc9c143118389c245610d2">00069</a>         QString <a class="code" href="class_station_meteo.html#a1827b33f3edc9c143118389c245610d2">hauteurNeige</a>;
+<a name="l00070"></a><a class="code" href="class_station_meteo.html#ac1604abd7f3a432146c396375cfb1193">00070</a>         QString <a class="code" href="class_station_meteo.html#ac1604abd7f3a432146c396375cfb1193">humidite</a>;
+<a name="l00071"></a><a class="code" href="class_station_meteo.html#ab5cb450e235e10ccabeddafa7d03decf">00071</a>         QString <a class="code" href="class_station_meteo.html#ab5cb450e235e10ccabeddafa7d03decf">pressionAir</a>;
+<a name="l00072"></a><a class="code" href="class_station_meteo.html#abcbbc8060975ed0987f2a7001531c9a3">00072</a>         QString <a class="code" href="class_station_meteo.html#abcbbc8060975ed0987f2a7001531c9a3">nomVideo</a>;
+<a name="l00073"></a><a class="code" href="class_station_meteo.html#a8e46f24eac9ea747ded3d1a4124d98e4">00073</a>         <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#a8e46f24eac9ea747ded3d1a4124d98e4">heureCourante</a>;
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075         <span class="keywordtype">bool</span> <a class="code" href="class_station_meteo.html#afaa634a6baf2c60d0dcf53f77ad2c93e" title="preparerDonnees() prepare les données pour l&#39;enregistrement">preparerDonnees</a>(<a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station">DONNEES_STATION</a> &amp;donneesEnregistrement);
+<a name="l00076"></a>00076         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a4ffdfdde8d4fe6cd1e7e548fcc0bfaae" title="enregistrerDonnees() enregistre les données dans la base de données.">enregistrerDonnees</a>();
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078     <span class="keyword">public</span>:
+<a name="l00079"></a>00079         <a class="code" href="class_station_meteo.html#ae11198b02d8e652d5fca116f13dca6ff" title="Constructeur.">StationMeteo</a>(QObject *parent = 0);
+<a name="l00080"></a>00080         <a class="code" href="class_station_meteo.html#ae11198b02d8e652d5fca116f13dca6ff" title="Constructeur.">StationMeteo</a>(<span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#af1b42910b829ff3073507bbf3826d16a">idSite</a>, <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#a12bc0812f5f6018aef1267063c3479c2">typeSite</a>, QString <a class="code" href="class_station_meteo.html#ae5b8015d87fe5c2fc37b1eb4efddc196">nomSite</a>, QString <a class="code" href="class_station_meteo.html#a3ce4df3fcac66fc9dc2bf1ef58212395">cheminVideo</a>, QString <a class="code" href="class_station_meteo.html#a49dea2c74ec3aa89780c5cd909175ed0">couleurTextPanneau</a>, QObject* parent = 0);
+<a name="l00081"></a>00081         <a class="code" href="class_station_meteo.html#a5747d9543ab96210f13abd6860e29035" title="StationMeteo::~StationMeteo.">~StationMeteo</a>();
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083         <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#ab2e320b7a9d7ecb22f2ce624d9013547" title="StationMeteo::getIdSite.">getIdSite</a>() <span class="keyword">const</span>;
+<a name="l00084"></a>00084         <span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#ab73bc85f63def70b98bc3fda5a5b18cb" title="StationMeteo::getTypeSite.">getTypeSite</a>() <span class="keyword">const</span>;
+<a name="l00085"></a>00085         QString <a class="code" href="class_station_meteo.html#a52c98a246f9fcc58c494bf0446ff9d01" title="StationMeteo::getNomTypeSite.">getNomTypeSite</a>() <span class="keyword">const</span>;
+<a name="l00086"></a>00086         QString <a class="code" href="class_station_meteo.html#aee42cf6c0bc032608e777e9a48192e23" title="StationMeteo::getCheminVideo.">getCheminVideo</a>() <span class="keyword">const</span>;
+<a name="l00087"></a>00087         QString <a class="code" href="class_station_meteo.html#a3a7deabecd7a6958b04fb83df35c642a">getNomVideo</a>() <span class="keyword">const</span>;
+<a name="l00088"></a>00088         QString <a class="code" href="class_station_meteo.html#af547a723b8b951d46ab86b2a66966005" title="StationMeteo::getMesures.">getMesures</a>(<span class="keywordtype">int</span> typeMesure);
+<a name="l00089"></a>00089         QString <a class="code" href="class_station_meteo.html#a083d441b100db267631a4bd520d32db9" title="StationMeteo::getDirectionVent.">getDirectionVent</a>() <span class="keyword">const</span>;
+<a name="l00090"></a>00090         QString <a class="code" href="class_station_meteo.html#ab7414f0ef05461c6ab4a0c41e826962f" title="StationMeteo::getVitesseVent.">getVitesseVent</a>() <span class="keyword">const</span>;
+<a name="l00091"></a>00091         QString <a class="code" href="class_station_meteo.html#a3f6ed271f8c0c92a1e09c87e438517e3" title="StationMeteo::getTemperatureAir.">getTemperatureAir</a>();
+<a name="l00092"></a>00092         QString <a class="code" href="class_station_meteo.html#ac87aa76f52bf444ebc7719e5ccb25b39" title="StationMeteo::getTemperatureNeige.">getTemperatureNeige</a>();
+<a name="l00093"></a>00093         QString <a class="code" href="class_station_meteo.html#ae22bd690d4d60dd0d5436625186d78a3" title="StationMeteo::getHauteurNeige.">getHauteurNeige</a>();
+<a name="l00094"></a>00094         QString <a class="code" href="class_station_meteo.html#a8fb652329edc788cbeda3f7d06793707" title="StationMeteo::getHumidite.">getHumidite</a>() <span class="keyword">const</span>;
+<a name="l00095"></a>00095         QString <a class="code" href="class_station_meteo.html#aeb319136fa8d898f3dba2f08f09f4bd6" title="StationMeteo::getPressionAir.">getPressionAir</a>() <span class="keyword">const</span>;
+<a name="l00096"></a>00096         QString <a class="code" href="class_station_meteo.html#a4b94cfbfaf84a77d5fca65907e2bc3e6" title="StationMeteo::getConseilsFartage.">getConseilsFartage</a>(<span class="keywordtype">int</span> marque) <span class="keyword">const</span>;
+<a name="l00097"></a>00097         QStringList <a class="code" href="class_station_meteo.html#a50316d9455e9658ffc7e7a631fdff19d">getInformationComplementaire</a>(<span class="keywordtype">int</span> <a class="code" href="class_station_meteo.html#af1b42910b829ff3073507bbf3826d16a">idSite</a>);
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a9fd075cccb5c1317c86f15c2e3b0f206" title="StationMeteo::setId.">setIdSite</a>(<span class="keywordtype">int</span>);
+<a name="l00100"></a>00100         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a2ec434b72ad7e3d7dcfc5e34acf00b90" title="StationMeteo::setTypeSite.">setTypeSite</a>(<span class="keywordtype">int</span>);
+<a name="l00101"></a>00101         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a97c3c1817cf4a7bb7fce376a71d48f9b">setDonneesTrame</a>(<a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station">DONNEES_STATION</a>);
+<a name="l00102"></a>00102         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a68f28a9e57906a3a95149919673b8a9a" title="StationMeteo::setNomVideo.">setNomVideo</a>(QString);
+<a name="l00103"></a>00103         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a0aa9b32d0854767888fde67741f0a570" title="StationMeteo::setDirectionVent.">setDirectionVent</a>(QString);
+<a name="l00104"></a>00104         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a62ac5cc25a92e10e8bf5bbc94f0b7628" title="StationMeteo::setVitesseVent.">setVitesseVent</a>(QString);
+<a name="l00105"></a>00105         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a004a3062d6464fd38cc8ebbb4df6b068" title="StationMeteo::setTemperatureAir.">setTemperatureAir</a>(QString);
+<a name="l00106"></a>00106         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a916a48590dbf2827fb63ca5c96759e8b" title="StationMeteo::setTemperatureNeige.">setTemperatureNeige</a>(QString);
+<a name="l00107"></a>00107         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a0b19f96c2493e41786c5c24740038a64" title="StationMeteo::setHauteurNeige.">setHauteurNeige</a>(QString);
+<a name="l00108"></a>00108         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#abf77e3880b5c612096915700964ec0c9" title="StationMeteo::setHumidite.">setHumidite</a>(QString);
+<a name="l00109"></a>00109         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#ab0fe170a3da49106b2af3d9dd0248494" title="StationMeteo::setPressionAir.">setPressionAir</a>(QString);
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112     signals:
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114     <span class="keyword">public</span> slots:
+<a name="l00115"></a>00115         <span class="keywordtype">void</span> <a class="code" href="class_station_meteo.html#a2dd4473336227c93e103c393a2633c42">traiterTrame</a>(QString trame);
+<a name="l00116"></a>00116 };
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 <span class="preprocessor">#endif // STATIONMETEO_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:59:17 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_port_x_bee.html" title="Communique avec les stations météo des sites via un port série virtuel." alt="" coords="1425,557,1551,677"/>
+<area shape="rect" id="node4" href="$class_station_meteo.html" title="Gére les données météos d&#39;une station d&#39;un site." alt="" coords="44,384,239,851"/>
+<area shape="rect" id="node8" href="$class_w_i_s_m_a_s_protocole.html" title="Gère la transmission entre les sites." alt="" coords="19,1150,179,1287"/>
+<area shape="rect" id="node6" href="$struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station" alt="" coords="5,23,160,299"/>
+<area shape="rect" id="node11" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; baseDeDonnees\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="184,6,328,317"/>
+<area shape="rect" id="node14" href="$struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html" title="fixe la configuration de l&#39;affichage des informations sur le panneau lumineux. titre QString..." alt="" coords="263,471,433,764"/>
+<area shape="rect" id="node16" href="$struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html" title="{CONFIG_ENREGISTREMENT\n|+ periode\l|}" alt="" coords="457,575,663,660"/>
+<area shape="rect" id="node18" href="$struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html" title="fixe la configuration de départ de l&#39;application." alt="" coords="687,566,828,669"/>
+<area shape="rect" id="node20" href="$struct_p_a_r_a_m___p_a_n_n_e_a_u.html" title="fixe les paramètres du périphérique panneau lumineux. port QString, int baud_rate, int data_bit, int stop, int parity" alt="" coords="852,540,993,695"/>
+<area shape="rect" id="node22" href="$struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html" title="{PARAM_COMMUNICATION\n|+ port\l+ baud_rate\l+ data_bit\l+ stop\l+ parity\l|}" alt="" coords="1017,540,1212,695"/>
+<area shape="rect" id="node24" href="$class_port_panneau.html" title="Communique avec les stations météo des sites via un port série virtuel." alt="" coords="1236,462,1401,773"/>
+</map>

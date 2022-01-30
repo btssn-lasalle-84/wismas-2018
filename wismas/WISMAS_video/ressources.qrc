@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icones">        
+        <file>icones/media/icone-video.png</file>
+        <file>icones/accueil/icone-station-de-ski.png</file>
+    </qresource>
+</RCC>

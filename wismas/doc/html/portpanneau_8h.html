@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS: Référence du fichier portpanneau.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier portpanneau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_port_panneau.html" title="Communique avec les stations météo des sites via un port série virtuel.">PortPanneau</a>.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;QObject&gt;</code><br/>
+<code>#include &quot;qextserialport.h&quot;</code><br/>
+<code>#include &lt;QString&gt;</code><br/>
+<code>#include &lt;QStringList&gt;</code><br/>
+</div>
+<p><a href="portpanneau_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_port_panneau.html">PortPanneau</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Communique avec les stations météo des sites via un port série virtuel.  <a href="class_port_panneau.html#details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a861ddd6d67eff2c72715f7eb70e201b6">PORT_PANNEAU</a>&#160;&#160;&#160;&quot;/dev/ttyUSB1&quot;</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fichier périphérique par défaut.  <a href="#a861ddd6d67eff2c72715f7eb70e201b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ad005f7b83af32fd5325d8c68a87039d5">PANNEAU_LG_MAX_TRAME</a>&#160;&#160;&#160;128</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ab5aaca13474ad2fa2c8b56a6c902e19f">PANNEAU_LG_MAX</a>&#160;&#160;&#160;16</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8f3e90c4916aacd2b2a4671017dc2ad4">PANNEAU_LG_REPONSE</a>&#160;&#160;&#160;4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#af0e1148bb8d6c84d740b03c5fcc9ee5f">PANNEAU_NUL</a>&#160;&#160;&#160;0x00</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aa8a493df907014a7785deecedf384f01">PANNEAU_ACK</a>&#160;&#160;&#160;&quot;ACK&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a39eba87aa0d7fad61bc13abdb0dfb3d5">PANNEAU_NACK</a>&#160;&#160;&#160;&quot;NACK&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ae32e8d7ac20fc92b0e9beee096a6c060">PANNEAU_PAGE_A</a>&#160;&#160;&#160;'A'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a4c2b35e8208859619546b4a5dfeb02b4">PANNEAU_PAGE_B</a>&#160;&#160;&#160;'B'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aa2af28509a02432117c5a7a871580f6e">PANNEAU_PAGE_C</a>&#160;&#160;&#160;'C'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ab1c8a44407ed8985168daca8cb82d538">PANNEAU_PAGE_D</a>&#160;&#160;&#160;'D'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ad711a2d73057883aff03deff6e90196a">PANNEAU_PAGE_E</a>&#160;&#160;&#160;'E'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ad43a2f6b004dbfbcf78f2fd98071600d">PANNEAU_PAGE_F</a>&#160;&#160;&#160;'F'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a9dc7bcf90a6d7385134ae372a5520e63">PANNEAU_PAGE_G</a>&#160;&#160;&#160;'G'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a77a8fdfff38438dfb85701c68ca3acc2">PANNEAU_PAGE_H</a>&#160;&#160;&#160;'H'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8f92968791d73802786017517c55fd51">PANNEAU_PAGE_I</a>&#160;&#160;&#160;'I'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aa93ae87d9153db268a97364501b78ffe">PANNEAU_IMMEDIATE</a>&#160;&#160;&#160;'A'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a80938aa56f0cc6871a3fc16a2ba5f81a">PANNEAU_XOPEN</a>&#160;&#160;&#160;'B'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8ed30f87064a50bdf0afe89ce4ed8f26">PANNEAU_CURTAIN_UP</a>&#160;&#160;&#160;'C'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#abbbb9d7a8fad43d7863db150db21b5a5">PANNEAU_CURTAIN_DOWN</a>&#160;&#160;&#160;'D'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a25f185c140f9a3f5904a7d048f6d3831">PANNEAU_SCROLL_LEFT</a>&#160;&#160;&#160;'E'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ab421be8b7853e6b9225d65b473d9a527">PANNEAU_SCROLL_RIGHT</a>&#160;&#160;&#160;'F'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8e5a7b947d24449149e99f36d0dec9a0">PANNEAU_VOPEN</a>&#160;&#160;&#160;'G'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a2a23e3ada1fbe4b17039c5bd0e603fbf">PANNEAU_VCLOSE</a>&#160;&#160;&#160;'H'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8b9e638f112c2508a38ef44eece357fe">PANNEAU_SCROLL_UP</a>&#160;&#160;&#160;'I'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ab8c608dfcb2fce23882bb2d59dc442d2">PANNEAU_SCROLL_DOWN</a>&#160;&#160;&#160;'J'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a983ef65238d604b177911ffa0439a89b">PANNEAU_HOLD</a>&#160;&#160;&#160;'K'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a8d97a6f3a77191528b891800a86302f0">PANNEAU_SNOW</a>&#160;&#160;&#160;'L'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#afd8ea64eb7fde2d2e1eac8360f6bbbde">PANNEAU_TWINKLE</a>&#160;&#160;&#160;'M'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ac4e53af238ad226371a5fff48e460f3d">PANNEAU_BLOCK_MOVE</a>&#160;&#160;&#160;'N'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a398e300553ec8bd5f8a16f3f2bf4cf41">PANNEAU_RANDOM</a>&#160;&#160;&#160;'P'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a3ee83f4094166cf62ff734250cc85429">PANNEAU_NORMAL</a>&#160;&#160;&#160;'A'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a89d19dbc6fa40f7b7106b67ed0c3028f">PANNEAU_BLINK</a>&#160;&#160;&#160;'B'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ab237f330403a6f8d69d9a9fa16c9a2be">PANNEAU_SIZE_5X7</a>&#160;&#160;&#160;'A'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aac55d45c9de5c0cf1ac9083e7097121e">PANNEAU_SIZE_6X7</a>&#160;&#160;&#160;'B'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ae01b38d25f7ae40f57d81b39d2de568e">PANNEAU_BOLD</a>&#160;&#160;&#160;SIZE_6X7</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#a0fc3232fbf69511a1a2e7b70f6a37d36">PANNEAU_POSITION_CENTER</a>&#160;&#160;&#160;'C'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aa7c3f48504c7d555102a7853845c9ec3">PANNEAU_NB_PAGES_MAX</a>&#160;&#160;&#160;8</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#ad5c46706b38c7dc7ebb32e964a24fd13">DEMO</a></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="portpanneau_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><dl class="author"><dt><b>Auteur:</b></dt><dd></dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.1 </dd></dl>
+</div><hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="ad5c46706b38c7dc7ebb32e964a24fd13"></a><!-- doxytag: member="portpanneau.h::DEMO" ref="ad5c46706b38c7dc7ebb32e964a24fd13" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ad5c46706b38c7dc7ebb32e964a24fd13">DEMO</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8a493df907014a7785deecedf384f01"></a><!-- doxytag: member="portpanneau.h::PANNEAU_ACK" ref="aa8a493df907014a7785deecedf384f01" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#aa8a493df907014a7785deecedf384f01">PANNEAU_ACK</a>&#160;&#160;&#160;&quot;ACK&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#aa548eaf8ae8deeb144a124d358d2a589">PortPanneau::lireAcquittement()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89d19dbc6fa40f7b7106b67ed0c3028f"></a><!-- doxytag: member="portpanneau.h::PANNEAU_BLINK" ref="a89d19dbc6fa40f7b7106b67ed0c3028f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a89d19dbc6fa40f7b7106b67ed0c3028f">PANNEAU_BLINK</a>&#160;&#160;&#160;'B'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4e53af238ad226371a5fff48e460f3d"></a><!-- doxytag: member="portpanneau.h::PANNEAU_BLOCK_MOVE" ref="ac4e53af238ad226371a5fff48e460f3d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ac4e53af238ad226371a5fff48e460f3d">PANNEAU_BLOCK_MOVE</a>&#160;&#160;&#160;'N'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae01b38d25f7ae40f57d81b39d2de568e"></a><!-- doxytag: member="portpanneau.h::PANNEAU_BOLD" ref="ae01b38d25f7ae40f57d81b39d2de568e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ae01b38d25f7ae40f57d81b39d2de568e">PANNEAU_BOLD</a>&#160;&#160;&#160;SIZE_6X7</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbbb9d7a8fad43d7863db150db21b5a5"></a><!-- doxytag: member="portpanneau.h::PANNEAU_CURTAIN_DOWN" ref="abbbb9d7a8fad43d7863db150db21b5a5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#abbbb9d7a8fad43d7863db150db21b5a5">PANNEAU_CURTAIN_DOWN</a>&#160;&#160;&#160;'D'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ed30f87064a50bdf0afe89ce4ed8f26"></a><!-- doxytag: member="portpanneau.h::PANNEAU_CURTAIN_UP" ref="a8ed30f87064a50bdf0afe89ce4ed8f26" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8ed30f87064a50bdf0afe89ce4ed8f26">PANNEAU_CURTAIN_UP</a>&#160;&#160;&#160;'C'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a983ef65238d604b177911ffa0439a89b"></a><!-- doxytag: member="portpanneau.h::PANNEAU_HOLD" ref="a983ef65238d604b177911ffa0439a89b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a983ef65238d604b177911ffa0439a89b">PANNEAU_HOLD</a>&#160;&#160;&#160;'K'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa93ae87d9153db268a97364501b78ffe"></a><!-- doxytag: member="portpanneau.h::PANNEAU_IMMEDIATE" ref="aa93ae87d9153db268a97364501b78ffe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#aa93ae87d9153db268a97364501b78ffe">PANNEAU_IMMEDIATE</a>&#160;&#160;&#160;'A'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5aaca13474ad2fa2c8b56a6c902e19f"></a><!-- doxytag: member="portpanneau.h::PANNEAU_LG_MAX" ref="ab5aaca13474ad2fa2c8b56a6c902e19f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ab5aaca13474ad2fa2c8b56a6c902e19f">PANNEAU_LG_MAX</a>&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad005f7b83af32fd5325d8c68a87039d5"></a><!-- doxytag: member="portpanneau.h::PANNEAU_LG_MAX_TRAME" ref="ad005f7b83af32fd5325d8c68a87039d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ad005f7b83af32fd5325d8c68a87039d5">PANNEAU_LG_MAX_TRAME</a>&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f3e90c4916aacd2b2a4671017dc2ad4"></a><!-- doxytag: member="portpanneau.h::PANNEAU_LG_REPONSE" ref="a8f3e90c4916aacd2b2a4671017dc2ad4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8f3e90c4916aacd2b2a4671017dc2ad4">PANNEAU_LG_REPONSE</a>&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39eba87aa0d7fad61bc13abdb0dfb3d5"></a><!-- doxytag: member="portpanneau.h::PANNEAU_NACK" ref="a39eba87aa0d7fad61bc13abdb0dfb3d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a39eba87aa0d7fad61bc13abdb0dfb3d5">PANNEAU_NACK</a>&#160;&#160;&#160;&quot;NACK&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#aa548eaf8ae8deeb144a124d358d2a589">PortPanneau::lireAcquittement()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7c3f48504c7d555102a7853845c9ec3"></a><!-- doxytag: member="portpanneau.h::PANNEAU_NB_PAGES_MAX" ref="aa7c3f48504c7d555102a7853845c9ec3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#aa7c3f48504c7d555102a7853845c9ec3">PANNEAU_NB_PAGES_MAX</a>&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_w_i_s_m_a_s_i_h_m.html#af1aa810418bdb51a9407bdaaa14e33cf">WISMASIHM::afficherInformationsMeteoStation()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ee83f4094166cf62ff734250cc85429"></a><!-- doxytag: member="portpanneau.h::PANNEAU_NORMAL" ref="a3ee83f4094166cf62ff734250cc85429" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a3ee83f4094166cf62ff734250cc85429">PANNEAU_NORMAL</a>&#160;&#160;&#160;'A'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0e1148bb8d6c84d740b03c5fcc9ee5f"></a><!-- doxytag: member="portpanneau.h::PANNEAU_NUL" ref="af0e1148bb8d6c84d740b03c5fcc9ee5f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#af0e1148bb8d6c84d740b03c5fcc9ee5f">PANNEAU_NUL</a>&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae32e8d7ac20fc92b0e9beee096a6c060"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_A" ref="ae32e8d7ac20fc92b0e9beee096a6c060" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ae32e8d7ac20fc92b0e9beee096a6c060">PANNEAU_PAGE_A</a>&#160;&#160;&#160;'A'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c2b35e8208859619546b4a5dfeb02b4"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_B" ref="a4c2b35e8208859619546b4a5dfeb02b4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a4c2b35e8208859619546b4a5dfeb02b4">PANNEAU_PAGE_B</a>&#160;&#160;&#160;'B'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2af28509a02432117c5a7a871580f6e"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_C" ref="aa2af28509a02432117c5a7a871580f6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#aa2af28509a02432117c5a7a871580f6e">PANNEAU_PAGE_C</a>&#160;&#160;&#160;'C'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1c8a44407ed8985168daca8cb82d538"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_D" ref="ab1c8a44407ed8985168daca8cb82d538" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ab1c8a44407ed8985168daca8cb82d538">PANNEAU_PAGE_D</a>&#160;&#160;&#160;'D'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad711a2d73057883aff03deff6e90196a"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_E" ref="ad711a2d73057883aff03deff6e90196a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ad711a2d73057883aff03deff6e90196a">PANNEAU_PAGE_E</a>&#160;&#160;&#160;'E'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad43a2f6b004dbfbcf78f2fd98071600d"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_F" ref="ad43a2f6b004dbfbcf78f2fd98071600d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ad43a2f6b004dbfbcf78f2fd98071600d">PANNEAU_PAGE_F</a>&#160;&#160;&#160;'F'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dc7bcf90a6d7385134ae372a5520e63"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_G" ref="a9dc7bcf90a6d7385134ae372a5520e63" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a9dc7bcf90a6d7385134ae372a5520e63">PANNEAU_PAGE_G</a>&#160;&#160;&#160;'G'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77a8fdfff38438dfb85701c68ca3acc2"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_H" ref="a77a8fdfff38438dfb85701c68ca3acc2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a77a8fdfff38438dfb85701c68ca3acc2">PANNEAU_PAGE_H</a>&#160;&#160;&#160;'H'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f92968791d73802786017517c55fd51"></a><!-- doxytag: member="portpanneau.h::PANNEAU_PAGE_I" ref="a8f92968791d73802786017517c55fd51" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8f92968791d73802786017517c55fd51">PANNEAU_PAGE_I</a>&#160;&#160;&#160;'I'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a50ece76ffa667f57f2cfe6bfaa5dec2e">PortPanneau::changerPage()</a>, et <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fc3232fbf69511a1a2e7b70f6a37d36"></a><!-- doxytag: member="portpanneau.h::PANNEAU_POSITION_CENTER" ref="a0fc3232fbf69511a1a2e7b70f6a37d36" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a0fc3232fbf69511a1a2e7b70f6a37d36">PANNEAU_POSITION_CENTER</a>&#160;&#160;&#160;'C'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a398e300553ec8bd5f8a16f3f2bf4cf41"></a><!-- doxytag: member="portpanneau.h::PANNEAU_RANDOM" ref="a398e300553ec8bd5f8a16f3f2bf4cf41" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a398e300553ec8bd5f8a16f3f2bf4cf41">PANNEAU_RANDOM</a>&#160;&#160;&#160;'P'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8c608dfcb2fce23882bb2d59dc442d2"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SCROLL_DOWN" ref="ab8c608dfcb2fce23882bb2d59dc442d2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ab8c608dfcb2fce23882bb2d59dc442d2">PANNEAU_SCROLL_DOWN</a>&#160;&#160;&#160;'J'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25f185c140f9a3f5904a7d048f6d3831"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SCROLL_LEFT" ref="a25f185c140f9a3f5904a7d048f6d3831" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a25f185c140f9a3f5904a7d048f6d3831">PANNEAU_SCROLL_LEFT</a>&#160;&#160;&#160;'E'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab421be8b7853e6b9225d65b473d9a527"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SCROLL_RIGHT" ref="ab421be8b7853e6b9225d65b473d9a527" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ab421be8b7853e6b9225d65b473d9a527">PANNEAU_SCROLL_RIGHT</a>&#160;&#160;&#160;'F'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b9e638f112c2508a38ef44eece357fe"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SCROLL_UP" ref="a8b9e638f112c2508a38ef44eece357fe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8b9e638f112c2508a38ef44eece357fe">PANNEAU_SCROLL_UP</a>&#160;&#160;&#160;'I'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab237f330403a6f8d69d9a9fa16c9a2be"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SIZE_5X7" ref="ab237f330403a6f8d69d9a9fa16c9a2be" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#ab237f330403a6f8d69d9a9fa16c9a2be">PANNEAU_SIZE_5X7</a>&#160;&#160;&#160;'A'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#a3116e521691f3e9f46e36d21ea303843">PortPanneau::creerTrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac55d45c9de5c0cf1ac9083e7097121e"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SIZE_6X7" ref="aac55d45c9de5c0cf1ac9083e7097121e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#aac55d45c9de5c0cf1ac9083e7097121e">PANNEAU_SIZE_6X7</a>&#160;&#160;&#160;'B'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d97a6f3a77191528b891800a86302f0"></a><!-- doxytag: member="portpanneau.h::PANNEAU_SNOW" ref="a8d97a6f3a77191528b891800a86302f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8d97a6f3a77191528b891800a86302f0">PANNEAU_SNOW</a>&#160;&#160;&#160;'L'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afd8ea64eb7fde2d2e1eac8360f6bbbde"></a><!-- doxytag: member="portpanneau.h::PANNEAU_TWINKLE" ref="afd8ea64eb7fde2d2e1eac8360f6bbbde" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#afd8ea64eb7fde2d2e1eac8360f6bbbde">PANNEAU_TWINKLE</a>&#160;&#160;&#160;'M'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a23e3ada1fbe4b17039c5bd0e603fbf"></a><!-- doxytag: member="portpanneau.h::PANNEAU_VCLOSE" ref="a2a23e3ada1fbe4b17039c5bd0e603fbf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a2a23e3ada1fbe4b17039c5bd0e603fbf">PANNEAU_VCLOSE</a>&#160;&#160;&#160;'H'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e5a7b947d24449149e99f36d0dec9a0"></a><!-- doxytag: member="portpanneau.h::PANNEAU_VOPEN" ref="a8e5a7b947d24449149e99f36d0dec9a0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a8e5a7b947d24449149e99f36d0dec9a0">PANNEAU_VOPEN</a>&#160;&#160;&#160;'G'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80938aa56f0cc6871a3fc16a2ba5f81a"></a><!-- doxytag: member="portpanneau.h::PANNEAU_XOPEN" ref="a80938aa56f0cc6871a3fc16a2ba5f81a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a80938aa56f0cc6871a3fc16a2ba5f81a">PANNEAU_XOPEN</a>&#160;&#160;&#160;'B'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a861ddd6d67eff2c72715f7eb70e201b6"></a><!-- doxytag: member="portpanneau.h::PORT_PANNEAU" ref="a861ddd6d67eff2c72715f7eb70e201b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="portpanneau_8h.html#a861ddd6d67eff2c72715f7eb70e201b6">PORT_PANNEAU</a>&#160;&#160;&#160;&quot;/dev/ttyUSB1&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="class_port_panneau.html#aeb0ca7ef29288f904a51affe1fe077a8">PortPanneau::PortPanneau()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des définitions de type</h2>
+<a class="anchor" id="aba7bc1797add20fe3efdf37ced1182c5"></a><!-- doxytag: member="portpanneau.h::uint8_t" ref="aba7bc1797add20fe3efdf37ced1182c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="portpanneau_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:59:17 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

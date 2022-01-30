@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS:  Fichier source de structures.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">structures.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="structures_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00013"></a>00013 <span class="preprocessor">#ifndef STRUCTURES_H</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#define STRUCTURES_H</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;QString&gt;</span>
+<a name="l00017"></a>00017 
+<a name="l00022"></a><a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html">00022</a> <span class="keyword">struct </span><a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html" title="fixe la configuration de départ de l&#39;application.">CONFIG_LOGICIEL</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a><a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html#a4927bf4728d1652957b4aa40cb2a9f60">00024</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html#a4927bf4728d1652957b4aa40cb2a9f60">nb_station</a>; 
+<a name="l00025"></a><a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html#a4f5c95d4fc6ebacc66c64b02abad7375">00025</a>     <span class="keywordtype">long</span>    <a class="code" href="struct_c_o_n_f_i_g___l_o_g_i_c_i_e_l.html#a4f5c95d4fc6ebacc66c64b02abad7375">periode</a>; 
+<a name="l00026"></a>00026 };
+<a name="l00027"></a>00027 
+<a name="l00033"></a><a class="code" href="struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html">00033</a> <span class="keyword">struct </span><a class="code" href="struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html">CONFIG_ENREGISTREMENT</a>
+<a name="l00034"></a>00034 {
+<a name="l00035"></a><a class="code" href="struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html#a1d61b9b7deba6e35728789ace5d745df">00035</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_c_o_n_f_i_g___e_n_r_e_g_i_s_t_r_e_m_e_n_t.html#a1d61b9b7deba6e35728789ace5d745df">periode</a>; <span class="comment">// défini une période d&#39;enregistrement en base de données</span>
+<a name="l00036"></a>00036 };
+<a name="l00037"></a>00037 
+<a name="l00046"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html">00046</a> <span class="keyword">struct </span><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html">PARAM_COMMUNICATION</a>
+<a name="l00047"></a>00047 {
+<a name="l00048"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#aab3425d9a53d8a1ac57ad58c768a2b93">00048</a>     QString <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#aab3425d9a53d8a1ac57ad58c768a2b93">port</a>; 
+<a name="l00049"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#afe3c2177ca838187d0079744d5158a0b">00049</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#afe3c2177ca838187d0079744d5158a0b">baud_rate</a>;
+<a name="l00050"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#a3deff526e4e4c7f3b7630058634f0e6a">00050</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#a3deff526e4e4c7f3b7630058634f0e6a">data_bit</a>;
+<a name="l00051"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ad40255e6f16d06130e090f84669dbdf0">00051</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ad40255e6f16d06130e090f84669dbdf0">stop</a>;
+<a name="l00052"></a><a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ac535d5c94c657fe1f24719fd4ca2eb8f">00052</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ac535d5c94c657fe1f24719fd4ca2eb8f">parity</a>;
+<a name="l00053"></a>00053 };
+<a name="l00054"></a>00054 
+<a name="l00064"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html">00064</a> <span class="keyword">struct </span><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html" title="fixe les paramètres du périphérique panneau lumineux. port QString, int baud_rate, int data_bit, int stop, int parity">PARAM_PANNEAU</a>
+<a name="l00065"></a>00065 {
+<a name="l00066"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a12cce0f6cf5cc91239aeb13eadf4a6b0">00066</a>     QString <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a12cce0f6cf5cc91239aeb13eadf4a6b0">port</a>; 
+<a name="l00067"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a5fba48b8948ca0b722ffabd457b45d50">00067</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a5fba48b8948ca0b722ffabd457b45d50">baud_rate</a>;
+<a name="l00068"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#ae5e187201ab737a30e36a8546ac714bc">00068</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#ae5e187201ab737a30e36a8546ac714bc">data_bit</a>;
+<a name="l00069"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a04deb56a10c11575a896d84f640e52a2">00069</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a04deb56a10c11575a896d84f640e52a2">stop</a>;
+<a name="l00070"></a><a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a88e47ba183b7be0e90296f3cc7604594">00070</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_p_a_r_a_m___p_a_n_n_e_a_u.html#a88e47ba183b7be0e90296f3cc7604594">parity</a>;
+<a name="l00071"></a>00071 };
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 
+<a name="l00086"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html">00086</a> <span class="keyword">struct </span><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html" title="fixe la configuration de l&#39;affichage des informations sur le panneau lumineux. titre QString...">AFFICHAGE_PANNEAU</a>
+<a name="l00087"></a>00087 {
+<a name="l00088"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3a4cb2c95a8f8ea19ec4880416475175">00088</a>     QString <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3a4cb2c95a8f8ea19ec4880416475175">titre</a>;
+<a name="l00089"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a6e09828eb13a18be8e4e0618a50dcf93">00089</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a6e09828eb13a18be8e4e0618a50dcf93">periode</a>;
+<a name="l00090"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#aee3c2eb7010b29272a3014fce8866f42">00090</a>     QString <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#aee3c2eb7010b29272a3014fce8866f42">taille_text</a>;
+<a name="l00091"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#aedf0ee7481263d70cfc62fe3173cda6d">00091</a>     <span class="keywordtype">int</span>     <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#aedf0ee7481263d70cfc62fe3173cda6d">temps_text</a>;
+<a name="l00092"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a6d9c3be6035da4e9025be12d1cc2ffb5">00092</a>     QString <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a6d9c3be6035da4e9025be12d1cc2ffb5">effet_transition</a>;
+<a name="l00093"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a61f0706043b979da80c0e08b24063f7d">00093</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a61f0706043b979da80c0e08b24063f7d">nom_station</a>;
+<a name="l00094"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a765eca362e5decf27fd5727f9c384b6e">00094</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a765eca362e5decf27fd5727f9c384b6e">date_heure</a>;
+<a name="l00095"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3b7a85af6aa91b9d9a2cfcbf52c7bbe1">00095</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3b7a85af6aa91b9d9a2cfcbf52c7bbe1">temperature_air</a>;
+<a name="l00096"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3923eea57e6a46785445f17d4c059caa">00096</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a3923eea57e6a46785445f17d4c059caa">temperature_neige</a>;
+<a name="l00097"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a5dfbb623df5b968f964e31640b39df72">00097</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a5dfbb623df5b968f964e31640b39df72">hauteur_neige</a>;
+<a name="l00098"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a491eac953a6255baca4eb950b88416fa">00098</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a491eac953a6255baca4eb950b88416fa">humidite</a>;
+<a name="l00099"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a49d0c910104bae27d33514a4bec209e3">00099</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#a49d0c910104bae27d33514a4bec209e3">pression</a>;
+<a name="l00100"></a><a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#ad4b82b2634c9ee772286097cee9b0e4d">00100</a>     <span class="keywordtype">bool</span>    <a class="code" href="struct_a_f_f_i_c_h_a_g_e___p_a_n_n_e_a_u.html#ad4b82b2634c9ee772286097cee9b0e4d">vitesse_vent</a>;
+<a name="l00101"></a>00101 };
+<a name="l00102"></a>00102 
+<a name="l00109"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html">00109</a> <span class="keyword">struct </span><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station">DONNEES_STATION</a>
+<a name="l00110"></a>00110 {
+<a name="l00111"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a1614d95eafaed237bc5c5ce9d6c80bee">00111</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a1614d95eafaed237bc5c5ce9d6c80bee">dateDonnes</a>;
+<a name="l00112"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a0895693c79e0e24bb298e384232f3b73">00112</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a0895693c79e0e24bb298e384232f3b73">heureDonnes</a>;
+<a name="l00113"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a2df4d159391d1eede864bacbed866439">00113</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a2df4d159391d1eede864bacbed866439">tarifs</a>;
+<a name="l00114"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#aad7fcd390acee0ee9bc649a47745a8f5">00114</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#aad7fcd390acee0ee9bc649a47745a8f5">horaire</a>;
+<a name="l00115"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#ab801e6cddb4848509e85d4b04337ee03">00115</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#ab801e6cddb4848509e85d4b04337ee03">nbPisteOuverte</a>;
+<a name="l00116"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a8ef9eb3fd0d7b7a5fd6522e818a45b7f">00116</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a8ef9eb3fd0d7b7a5fd6522e818a45b7f">directionVent</a>;
+<a name="l00117"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#ac41ba9d5084b7145ef2443d9b28a8e12">00117</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#ac41ba9d5084b7145ef2443d9b28a8e12">vitesseVent</a>;
+<a name="l00118"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a51b0816c9863c15d9a74e4e6b2da0e4c">00118</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a51b0816c9863c15d9a74e4e6b2da0e4c">temperatureAir</a>;
+<a name="l00119"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a611c4b9bf5b7b86305828067aebf0a6f">00119</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a611c4b9bf5b7b86305828067aebf0a6f">temperatureNeige</a>;
+<a name="l00120"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a6891110bb13126033fdc87dcde28974f">00120</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a6891110bb13126033fdc87dcde28974f">hauteurNeige</a>;
+<a name="l00121"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#aac2fcaacd4a17333eab6ae4565e03331">00121</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#aac2fcaacd4a17333eab6ae4565e03331">humidite</a>;
+<a name="l00122"></a><a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a73597594c867a51f48d2e3f1bbe496ff">00122</a>     QString <a class="code" href="struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html#a73597594c867a51f48d2e3f1bbe496ff">pressionAir</a>;
+<a name="l00123"></a>00123 };
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="preprocessor">#endif // STRUCTURES_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:59:17 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

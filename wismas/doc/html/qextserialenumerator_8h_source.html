@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS:  Fichier source de qextserialenumerator.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">qextserialenumerator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="qextserialenumerator_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/****************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment">** Copyright (c) 2000-2003 Wayne Roth</span>
+<a name="l00003"></a>00003 <span class="comment">** Copyright (c) 2004-2007 Stefan Sander</span>
+<a name="l00004"></a>00004 <span class="comment">** Copyright (c) 2007 Michal Policht</span>
+<a name="l00005"></a>00005 <span class="comment">** Copyright (c) 2008 Brandon Fosdick</span>
+<a name="l00006"></a>00006 <span class="comment">** Copyright (c) 2009-2010 Liam Staskawicz</span>
+<a name="l00007"></a>00007 <span class="comment">** Copyright (c) 2011 Debao Zhang</span>
+<a name="l00008"></a>00008 <span class="comment">** All right reserved.</span>
+<a name="l00009"></a>00009 <span class="comment">** Web: http://code.google.com/p/qextserialport/</span>
+<a name="l00010"></a>00010 <span class="comment">**</span>
+<a name="l00011"></a>00011 <span class="comment">** Permission is hereby granted, free of charge, to any person obtaining</span>
+<a name="l00012"></a>00012 <span class="comment">** a copy of this software and associated documentation files (the</span>
+<a name="l00013"></a>00013 <span class="comment">** &quot;Software&quot;), to deal in the Software without restriction, including</span>
+<a name="l00014"></a>00014 <span class="comment">** without limitation the rights to use, copy, modify, merge, publish,</span>
+<a name="l00015"></a>00015 <span class="comment">** distribute, sublicense, and/or sell copies of the Software, and to</span>
+<a name="l00016"></a>00016 <span class="comment">** permit persons to whom the Software is furnished to do so, subject to</span>
+<a name="l00017"></a>00017 <span class="comment">** the following conditions:</span>
+<a name="l00018"></a>00018 <span class="comment">**</span>
+<a name="l00019"></a>00019 <span class="comment">** The above copyright notice and this permission notice shall be</span>
+<a name="l00020"></a>00020 <span class="comment">** included in all copies or substantial portions of the Software.</span>
+<a name="l00021"></a>00021 <span class="comment">**</span>
+<a name="l00022"></a>00022 <span class="comment">** THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,</span>
+<a name="l00023"></a>00023 <span class="comment">** EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</span>
+<a name="l00024"></a>00024 <span class="comment">** MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</span>
+<a name="l00025"></a>00025 <span class="comment">** NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE</span>
+<a name="l00026"></a>00026 <span class="comment">** LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION</span>
+<a name="l00027"></a>00027 <span class="comment">** OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION</span>
+<a name="l00028"></a>00028 <span class="comment">** WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span>
+<a name="l00029"></a>00029 <span class="comment">**</span>
+<a name="l00030"></a>00030 <span class="comment">****************************************************************************/</span>
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="preprocessor">#ifndef _QEXTSERIALENUMERATOR_H_</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define _QEXTSERIALENUMERATOR_H_</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span>
+<a name="l00035"></a>00035 <span class="preprocessor">#include &lt;QtCore/QList&gt;</span>
+<a name="l00036"></a>00036 <span class="preprocessor">#include &lt;QtCore/QObject&gt;</span>
+<a name="l00037"></a>00037 <span class="preprocessor">#include &quot;<a class="code" href="qextserialport__global_8h.html">qextserialport_global.h</a>&quot;</span>
+<a name="l00038"></a>00038 
+<a name="l00044"></a><a class="code" href="struct_qext_port_info.html">00044</a> <span class="keyword">struct </span><a class="code" href="struct_qext_port_info.html" title="The QextPortInfo class containing port information.">QextPortInfo</a> {
+<a name="l00045"></a><a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a">00045</a>     QString <a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>;   
+<a name="l00046"></a><a class="code" href="struct_qext_port_info.html#a9bb0593dbd5bc1a0fc081e61268eaf46">00046</a>     QString <a class="code" href="struct_qext_port_info.html#a9bb0593dbd5bc1a0fc081e61268eaf46" title="Physical name. /**&lt; TODO */.">physName</a>;   
+<a name="l00047"></a><a class="code" href="struct_qext_port_info.html#a1bf41f0d6c577f87161f4fdb077fb952">00047</a>     QString <a class="code" href="struct_qext_port_info.html#a1bf41f0d6c577f87161f4fdb077fb952" title="Friendly name. /**&lt; TODO */.">friendName</a>; 
+<a name="l00048"></a><a class="code" href="struct_qext_port_info.html#a47a6287c969ce9797b87f9ffdf36763c">00048</a>     QString <a class="code" href="struct_qext_port_info.html#a47a6287c969ce9797b87f9ffdf36763c" title="Enumerator name. /**&lt; TODO */.">enumName</a>;   
+<a name="l00049"></a><a class="code" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc">00049</a>     <span class="keywordtype">int</span> <a class="code" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc" title="Vendor ID. /**&lt; TODO */.">vendorID</a>;       
+<a name="l00050"></a><a class="code" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948">00050</a>     <span class="keywordtype">int</span> <a class="code" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948" title="Product ID /**&lt; TODO */.">productID</a>;      
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="keyword">class </span><a class="code" href="class_qext_serial_enumerator_private.html">QextSerialEnumeratorPrivate</a>;
+<a name="l00059"></a><a class="code" href="class_qext_serial_enumerator.html">00059</a> <span class="keyword">class </span><a class="code" href="qextserialport__global_8h.html#aa3feb167663777e733b50c492c3e3c88">QEXTSERIALPORT_EXPORT</a> <a class="code" href="class_qext_serial_enumerator.html" title="The QextSerialEnumerator class provides list of ports available in the system.">QextSerialEnumerator</a> : <span class="keyword">public</span> QObject
+<a name="l00060"></a>00060 {
+<a name="l00061"></a>00061     Q_OBJECT
+<a name="l00062"></a>00062     Q_DECLARE_PRIVATE(<a class="code" href="class_qext_serial_enumerator.html" title="The QextSerialEnumerator class provides list of ports available in the system.">QextSerialEnumerator</a>)
+<a name="l00063"></a>00063 <span class="keyword">public</span>:
+<a name="l00070"></a>00070     <a class="code" href="class_qext_serial_enumerator.html" title="The QextSerialEnumerator class provides list of ports available in the system.">QextSerialEnumerator</a>(QObject *parent=0);
+<a name="l00076"></a>00076     ~<a class="code" href="class_qext_serial_enumerator.html" title="The QextSerialEnumerator class provides list of ports available in the system.">QextSerialEnumerator</a>();
+<a name="l00077"></a>00077 
+<a name="l00084"></a>00084     <span class="keyword">static</span> QList&lt;QextPortInfo&gt; getPorts();
+<a name="l00090"></a>00090     <span class="keywordtype">void</span> setUpNotifications();
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 Q_SIGNALS:
+<a name="l00099"></a>00099     <span class="keywordtype">void</span> deviceDiscovered(<span class="keyword">const</span> <a class="code" href="struct_qext_port_info.html" title="The QextPortInfo class containing port information.">QextPortInfo</a> &amp;info);
+<a name="l00106"></a>00106     <span class="keywordtype">void</span> deviceRemoved(<span class="keyword">const</span> <a class="code" href="struct_qext_port_info.html" title="The QextPortInfo class containing port information.">QextPortInfo</a> &amp;info);
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 <span class="keyword">private</span>:
+<a name="l00109"></a>00109     Q_DISABLE_COPY(<a class="code" href="class_qext_serial_enumerator.html" title="The QextSerialEnumerator class provides list of ports available in the system.">QextSerialEnumerator</a>)
+<a name="l00110"></a>00110 <span class="preprocessor">#if defined(Q_OS_LINUX) &amp;&amp; !defined(QESP_NO_UDEV)</span>
+<a name="l00111"></a>00111 <span class="preprocessor"></span>    Q_PRIVATE_SLOT(d_func(), <span class="keywordtype">void</span> _q_deviceEvent())
+<a name="l00112"></a>00112 <span class="preprocessor">#endif</span>
+<a name="l00113"></a><a class="code" href="class_qext_serial_enumerator.html#a1ca5bf6b9ecf018c275d9adb64b069d1">00113</a> <span class="preprocessor"></span>    <a class="code" href="class_qext_serial_enumerator_private.html">QextSerialEnumeratorPrivate</a> *<a class="code" href="class_qext_serial_enumerator.html#a1ca5bf6b9ecf018c275d9adb64b069d1">d_ptr</a>; 
+<a name="l00114"></a>00114 };
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 <span class="preprocessor">#endif </span><span class="comment">/*_QEXTSERIALENUMERATOR_H_*/</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi Mars 24 2018 11:49:24 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

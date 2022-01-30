@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$class_w_i_s_m_a_s_protocole.html" title="Gère la transmission entre les sites." alt="" coords="75,918,235,1055"/>
+<area shape="rect" id="node2" href="$struct_d_o_n_n_e_e_s___s_t_a_t_i_o_n.html" title="fixe les données d&#39;un station" alt="" coords="5,23,160,299"/>
+<area shape="rect" id="node7" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; baseDeDonnees\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="184,6,328,317"/>
+</map>

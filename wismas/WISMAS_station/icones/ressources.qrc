@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ressources.qrc</file>
+        <file>direction_vent.png</file>
+        <file>fond_4.png</file>
+        <file>hauteur_neige.png</file>
+        <file>humidite.png</file>
+        <file>pression.png</file>
+        <file>temperature.png</file>
+        <file>temperature_neige.png</file>
+        <file>vent.png</file>
+        <file>1.png</file>
+        <file>2.png</file>
+        <file>3.png</file>
+        <file>12.png</file>
+        <file>22.png</file>
+        <file>32.png</file>
+        <file>Lautaret-2012-05-01-0843.jpg</file>
+    </qresource>
+</RCC>

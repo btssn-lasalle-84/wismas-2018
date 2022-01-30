@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS:  Fichier source de IHMWismas.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">IHMWismas.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_h_m_wismas_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00016"></a>00016 <span class="preprocessor">#ifndef IHMWISMAS_H</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#define IHMWISMAS_H</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &lt;QtGui&gt;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &lt;QWidget&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;QTimer&gt;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;QLabel&gt;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &lt;QDebug&gt;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;QVector&gt;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;QNetworkRequest&gt;</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#include &lt;QNetworkAccessManager&gt;</span>
+<a name="l00027"></a>00027 <span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Camera.h</a>&quot;</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="_i_h_m_wismas_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">00029</a> <span class="preprocessor">#define DEBUG</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a>00031 <span class="keyword">namespace </span>Ui
+<a name="l00032"></a>00032 {
+<a name="l00033"></a>00033     <span class="keyword">class </span><a class="code" href="class_i_h_m_wismas.html" title="Interface administrateur pour gérer le système vidéo.">IHMWismas</a>;
+<a name="l00034"></a>00034 }
+<a name="l00035"></a>00035 
+<a name="l00041"></a><a class="code" href="class_i_h_m_wismas.html">00041</a> <span class="keyword">class </span><a class="code" href="class_i_h_m_wismas.html" title="Interface administrateur pour gérer le système vidéo.">IHMWismas</a> : <span class="keyword">public</span> QWidget
+<a name="l00042"></a>00042 {
+<a name="l00043"></a>00043     Q_OBJECT
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045     <span class="keyword">private</span>:
+<a name="l00046"></a><a class="code" href="class_i_h_m_wismas.html#a0e96e5616a7ae8cb3ba4600770424208">00046</a>         Ui::IHMWismas* <a class="code" href="class_i_h_m_wismas.html#a0e96e5616a7ae8cb3ba4600770424208" title="relation vers la classe IHM">ui</a>; 
+<a name="l00047"></a><a class="code" href="class_i_h_m_wismas.html#a289573e9c06830022612d633a1b5975e">00047</a>         QString <a class="code" href="class_i_h_m_wismas.html#a289573e9c06830022612d633a1b5975e" title="le fichier de parametrage">fichierINI</a>; 
+<a name="l00048"></a><a class="code" href="class_i_h_m_wismas.html#a7114fd0dee26ba6de0af0fa76f5ed638">00048</a>         QVector&lt;QTimer*&gt; <a class="code" href="class_i_h_m_wismas.html#a7114fd0dee26ba6de0af0fa76f5ed638" title="les timers de chaque caméra">timerCamera</a>; 
+<a name="l00049"></a><a class="code" href="class_i_h_m_wismas.html#a719d8978d5ad350d488d7b0702370605">00049</a>         QTimer* <a class="code" href="class_i_h_m_wismas.html#a719d8978d5ad350d488d7b0702370605">timerInitial</a>;
+<a name="l00050"></a><a class="code" href="class_i_h_m_wismas.html#ae58918b87b86410f7ca98113daa4a542">00050</a>         QTimer* <a class="code" href="class_i_h_m_wismas.html#ae58918b87b86410f7ca98113daa4a542">timerFinal</a>;
+<a name="l00051"></a><a class="code" href="class_i_h_m_wismas.html#aa389a2fd86041045b438a706ce9e5d3b">00051</a>         QVector&lt;Camera*&gt; <a class="code" href="class_i_h_m_wismas.html#aa389a2fd86041045b438a706ce9e5d3b" title="les caméras à gérer">cameras</a>; 
+<a name="l00052"></a><a class="code" href="class_i_h_m_wismas.html#ab1c6b9a1ad1719a78ee581d1ab22be85">00052</a>         QNetworkAccessManager* <a class="code" href="class_i_h_m_wismas.html#ab1c6b9a1ad1719a78ee581d1ab22be85" title="pour émettre des demandes de deplacement de la camera">manager</a>; 
+<a name="l00053"></a><a class="code" href="class_i_h_m_wismas.html#a7f855c164588427751c28727f94f4860">00053</a>         QAction* <a class="code" href="class_i_h_m_wismas.html#a7f855c164588427751c28727f94f4860">actionQuitter</a>;
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#abd4096bb0027cc0a497f6a53b5d5297c" title="Connecter les signaux aux slots.">connecter</a>() <span class="keyword">const</span>;
+<a name="l00056"></a>00056         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a3a6acb2eebb84223436b86c265c564c2" title="Lire les paramètres du fichier de configuration .ini pour créer les caméras ainsi que leur timer...">creerCameras</a>();
+<a name="l00057"></a>00057         QUrl <a class="code" href="class_i_h_m_wismas.html#aa21ff306ed82cb638cb98e4ccfdf0073" title="Créer un url caméra pour récupérer son flux vidéo.">creerUrlCamera</a>() <span class="keyword">const</span>;
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a68c9f50a7b03d0f79eacea8fd0e215e3" title="Démarrer la période des caméras.">demarrerTimers</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numeroCamera, <span class="keyword">const</span> <a class="code" href="struct_parametres.html" title="paramètres d&#39;une caméra">Parametres</a> &amp;parametres);
+<a name="l00059"></a>00059         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#ae55ea19bb5c4786cdfcda3ba4fe88fa2" title="Arrêter la période des caméras.">arreterTimers</a>() <span class="keyword">const</span>;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061     <span class="keyword">public</span>:
+<a name="l00062"></a>00062         <span class="keyword">explicit</span> <a class="code" href="class_i_h_m_wismas.html#a9eb6ec28df4289124ac646ea2bcaacd7" title="Constructeur de la calsse IHMWismas.">IHMWismas</a>(QWidget* parent = 0);
+<a name="l00063"></a>00063         <a class="code" href="class_i_h_m_wismas.html#a59045651e49274e1d51b0c8dd12b19df" title="Destructeur.">~IHMWismas</a>();
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065     signals:
+<a name="l00066"></a>00066         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a2d4a3c9afe5db77bb660d8fd8a22311e">fini</a>();
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068     <span class="keyword">private</span> slots:
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070     <span class="keyword">public</span> slots:
+<a name="l00071"></a>00071         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#ac54616d497639705080f2eba9a959c79" title="Afficher la fenêtre de paramétrage des caméras.">parametrer</a>();
+<a name="l00072"></a>00072         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a0999f1198699da9ad3081234155c5520" title="Afficher la fenêtre d&#39;acquisition des vidéos.">demarrer</a>();
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#ae421e49417cccc72cc292f70453aeb21" title="Gérer l&#39;état des caméras au niveau de l&#39;interface.">gererBoutonEtat</a>();
+<a name="l00075"></a>00075         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a30c9afeac50b2e8056dbf446e878c679" title="Gérer les déplacements au niveau de l&#39;interface.">gererTypeDeplacement</a>() <span class="keyword">const</span>;
+<a name="l00076"></a>00076         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a97590b5ed5b9316b975f462c98be4de0" title="Activer le type de déplacement fixe.">activerBoutonsCamera</a>() <span class="keyword">const</span>;
+<a name="l00077"></a>00077         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a87e4656580b610c371e6d5a6b2896d8e" title="Activer le type de déplacement panoramique.">desactiverBoutonsCamera</a>() <span class="keyword">const</span>;
+<a name="l00078"></a>00078         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a3bb1180c2c93eeb7f79087b7952dcdfa" title="Déplacer la caméra à gauche.">deplacerGauche</a>() <span class="keyword">const</span>;
+<a name="l00079"></a>00079         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a0227f25ee3018307dc657c7d3dc47d26" title="Déplacer la caméra à droite.">deplacerDroite</a>() <span class="keyword">const</span>;
+<a name="l00080"></a>00080         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#afcb7d65f5fd9310572358865d38fdb54" title="Déplacer la caméra en haut.">deplacerHaut</a>() <span class="keyword">const</span> ;
+<a name="l00081"></a>00081         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a2bfb7434a3939437bb8c9d33e2b21517" title="Déplacer la caméra en bas.">deplacerBas</a>() <span class="keyword">const</span>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#afaeb4229809285ec77d412f27bc2f9b0" title="Sauvegarder les paramètres entrés via l&#39;IHM sur le fichier de configuration .ini.">sauvegarderParametres</a>();
+<a name="l00084"></a>00084         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#aa7fe6380a955d298931d30d5b934347f" title="Afficher les paramètres d&#39;une caméra.">afficherParametresCamera</a>() <span class="keyword">const</span>;
+<a name="l00085"></a>00085         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a5251546381ab2a8fde9da7d7a2754f5b" title="Rafraîchir les paramètres caméra.">rafraichirFluxVideo</a>(<span class="keyword">const</span> QString identifiantCamera, <a class="code" href="struct_parametres.html" title="paramètres d&#39;une caméra">Parametres</a> &amp;parametres);
+<a name="l00086"></a>00086         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a7815e984c25ba285e9033fb6c3afebc6" title="Afficher le flux vidéo de la caméra sélectionnée.">afficherFluxVideo</a>() <span class="keyword">const</span>;
+<a name="l00087"></a>00087         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a2a649db02e76dfbf5d988005474b7473" title="Paramétrer la position initiale de la caméra.">sauvegarderPositionInitiale</a>() <span class="keyword">const</span>;
+<a name="l00088"></a>00088         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a70159279f719363c5c25880b71459ea5" title="Paramétrer la position finale de la caméra.">sauvegarderPositionFinale</a>() <span class="keyword">const</span>;
+<a name="l00089"></a>00089         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#ad9648a58e8542530c4f8c86ccf208f01" title="Paramétrer la position finale de la caméra.">initialiserPosition</a>() <span class="keyword">const</span>;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a64c1fd906dc5adc5f57a2f8241b31755" title="Lancer la vidéo.">demarrerAcquisitionVideo</a>();
+<a name="l00092"></a>00092         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a078089de5db760f658b99d549d0d6c70" title="Déplacer la prise vidéo position intiale.">deplacerPositionInitiale</a>();
+<a name="l00093"></a>00093         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a0c4e30cee110cc77450acbf420e61287" title="Déplacer la prise vidéo position finale.">deplacerPositionFinale</a>();
+<a name="l00094"></a>00094         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#ac626536e55d758e47aa4da34e4d58517" title="Arrêter la prise vidéo.">arreterAcquisitionVideo</a>();
+<a name="l00095"></a>00095         <span class="keywordtype">void</span> <a class="code" href="class_i_h_m_wismas.html#a67f5f38a424779fc8fd75d4fefea5546" title="Afficher des messages sur les enregistrements.">afficherMessage</a>(<span class="keyword">const</span> QString message) <span class="keyword">const</span>;
+<a name="l00096"></a>00096 };
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098 <span class="preprocessor">#endif // FENETREACCUEIL_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi Juin 7 2018 20:59:17 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

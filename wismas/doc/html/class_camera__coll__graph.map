@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$struct_parametres.html" title="paramètres d&#39;une caméra" alt="" coords="5,5,141,264"/>
+<area shape="rect" id="node4" href="$class_parametrage.html" title="Paramétrer le système vidéo." alt="" coords="117,470,243,642"/>
+<area shape="rect" id="node7" href="$class_video.html" title="Traiter les vidéos capturer par le système vidéo." alt="" coords="267,331,507,781"/>
+</map>

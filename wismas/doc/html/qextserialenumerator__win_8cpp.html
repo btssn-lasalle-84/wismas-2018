@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>WISMAS: Référence du fichier qextserialenumerator_win.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="icone-wismas.png"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">WISMAS
+   &#160;<span id="projectnumber">0.8</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR La Salle Avignon 2018</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier qextserialenumerator_win.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="qextserialenumerator_8h_source.html">qextserialenumerator.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="qextserialenumerator__p_8h_source.html">qextserialenumerator_p.h</a>&quot;</code><br/>
+<code>#include &lt;QtCore/QDebug&gt;</code><br/>
+<code>#include &lt;QtCore/QMetaType&gt;</code><br/>
+<code>#include &lt;QtCore/QRegExp&gt;</code><br/>
+<code>#include &lt;objbase.h&gt;</code><br/>
+<code>#include &lt;initguid.h&gt;</code><br/>
+<code>#include &lt;setupapi.h&gt;</code><br/>
+<code>#include &lt;dbt.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="qextserialport_8h_source.html">qextserialport.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a774e4ae0995c78347820121dcd664353">QStringToTCHAR</a>(x)&#160;&#160;&#160;x.local8Bit().constData()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#afc01f40393eb66770e837063f5ea7189">PQStringToTCHAR</a>(x)&#160;&#160;&#160;x-&gt;local8Bit().constData()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a>(x)&#160;&#160;&#160;QString::fromLocal8Bit((char *)(x))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#aa6b4824b4b6ac793a813acb39f46e2b5">TCHARToQStringN</a>(x, y)&#160;&#160;&#160;QString::fromLocal8Bit((char *)(x),(y))</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a7800c4d8c405c77e3d16fd357a969e7d">getRegKeyValue</a> (HKEY key, LPCTSTR property)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a> (HDEVINFO devInfo, PSP_DEVINFO_DATA devData, DWORD property)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin</a> (<a class="el" href="struct_qext_port_info.html">QextPortInfo</a> *portInfo, HDEVINFO devInfo, PSP_DEVINFO_DATA devData, WPARAM wParam=DBT_DEVICEARRIVAL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#ade1276d4ae977d2e7b9a929c0aacc83e">enumerateDevicesWin</a> (const GUID &amp;guid, QList&lt; <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &gt; *infoList)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a1fa6a8df113788ab3cc1c097e746eef3">lessThan</a> (const <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &amp;s1, const <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &amp;s2)</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const GUID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="qextserialenumerator__win_8cpp.html#a47a0d1cde9fb48b4e52aedd568342e28">deviceClassGuids</a> []</td></tr>
+</table>
+<hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="afc01f40393eb66770e837063f5ea7189"></a><!-- doxytag: member="qextserialenumerator_win.cpp::PQStringToTCHAR" ref="afc01f40393eb66770e837063f5ea7189" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="qextserialenumerator__win_8cpp.html#afc01f40393eb66770e837063f5ea7189">PQStringToTCHAR</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;x-&gt;local8Bit().constData()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a774e4ae0995c78347820121dcd664353"></a><!-- doxytag: member="qextserialenumerator_win.cpp::QStringToTCHAR" ref="a774e4ae0995c78347820121dcd664353" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="qextserialenumerator__win_8cpp.html#a774e4ae0995c78347820121dcd664353">QStringToTCHAR</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;x.local8Bit().constData()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef6ac74ac2e3c102c2a77261471e6a80"></a><!-- doxytag: member="qextserialenumerator_win.cpp::TCHARToQString" ref="aef6ac74ac2e3c102c2a77261471e6a80" args="(x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;QString::fromLocal8Bit((char *)(x))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Référencé par <a class="el" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty()</a>, et <a class="el" href="qextserialenumerator__win_8cpp.html#a7800c4d8c405c77e3d16fd357a969e7d">getRegKeyValue()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6b4824b4b6ac793a813acb39f46e2b5"></a><!-- doxytag: member="qextserialenumerator_win.cpp::TCHARToQStringN" ref="aa6b4824b4b6ac793a813acb39f46e2b5" args="(x, y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="qextserialenumerator__win_8cpp.html#aa6b4824b4b6ac793a813acb39f46e2b5">TCHARToQStringN</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;QString::fromLocal8Bit((char *)(x),(y))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="ade1276d4ae977d2e7b9a929c0aacc83e"></a><!-- doxytag: member="qextserialenumerator_win.cpp::enumerateDevicesWin" ref="ade1276d4ae977d2e7b9a929c0aacc83e" args="(const GUID &amp;guid, QList&lt; QextPortInfo &gt; *infoList)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="qextserialenumerator__win_8cpp.html#ade1276d4ae977d2e7b9a929c0aacc83e">enumerateDevicesWin</a> </td>
+          <td>(</td>
+          <td class="paramtype">const GUID &amp;&#160;</td>
+          <td class="paramname"><em>guid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QList&lt; <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &gt; *&#160;</td>
+          <td class="paramname"><em>infoList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin()</a>, <a class="el" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a">QextPortInfo::portName</a>, <a class="el" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948">QextPortInfo::productID</a>, et <a class="el" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc">QextPortInfo::vendorID</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    HDEVINFO devInfo;
+    <span class="keywordflow">if</span> ((devInfo = ::SetupDiGetClassDevs(&amp;guid, NULL, NULL, DIGCF_PRESENT)) != INVALID_HANDLE_VALUE) {
+        SP_DEVINFO_DATA devInfoData;
+        devInfoData.cbSize = <span class="keyword">sizeof</span>(SP_DEVINFO_DATA);
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; ::SetupDiEnumDeviceInfo(devInfo, i, &amp;devInfoData); i++) {
+            <a class="code" href="struct_qext_port_info.html" title="The QextPortInfo class containing port information.">QextPortInfo</a> info;
+            info.<a class="code" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948" title="Product ID /**&lt; TODO */.">productID</a> = info.<a class="code" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc" title="Vendor ID. /**&lt; TODO */.">vendorID</a> = 0;
+            <a class="code" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin</a>(&amp;info, devInfo, &amp;devInfoData);
+            <span class="keywordflow">if</span> (!info.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>.startsWith(QLatin1String(<span class="stringliteral">&quot;LPT&quot;</span>), Qt::CaseInsensitive))
+                infoList-&gt;append(info);
+        }
+        ::SetupDiDestroyDeviceInfoList(devInfo);
+    }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9ba012a27237667ee890ac4e4144b280"></a><!-- doxytag: member="qextserialenumerator_win.cpp::getDeviceDetailsWin" ref="a9ba012a27237667ee890ac4e4144b280" args="(QextPortInfo *portInfo, HDEVINFO devInfo, PSP_DEVINFO_DATA devData, WPARAM wParam=DBT_DEVICEARRIVAL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_qext_port_info.html">QextPortInfo</a> *&#160;</td>
+          <td class="paramname"><em>portInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HDEVINFO&#160;</td>
+          <td class="paramname"><em>devInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PSP_DEVINFO_DATA&#160;</td>
+          <td class="paramname"><em>devData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM&#160;</td>
+          <td class="paramname"><em>wParam</em> = <code>DBT_DEVICEARRIVAL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="struct_qext_port_info.html#a47a6287c969ce9797b87f9ffdf36763c">QextPortInfo::enumName</a>, <a class="el" href="struct_qext_port_info.html#a1bf41f0d6c577f87161f4fdb077fb952">QextPortInfo::friendName</a>, <a class="el" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty()</a>, <a class="el" href="qextserialenumerator__win_8cpp.html#a7800c4d8c405c77e3d16fd357a969e7d">getRegKeyValue()</a>, <a class="el" href="struct_qext_port_info.html#a9bb0593dbd5bc1a0fc081e61268eaf46">QextPortInfo::physName</a>, <a class="el" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a">QextPortInfo::portName</a>, <a class="el" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948">QextPortInfo::productID</a>, et <a class="el" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc">QextPortInfo::vendorID</a>.</p>
+
+<p>Référencé par <a class="el" href="qextserialenumerator__win_8cpp.html#ade1276d4ae977d2e7b9a929c0aacc83e">enumerateDevicesWin()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    portInfo-&gt;<a class="code" href="struct_qext_port_info.html#a1bf41f0d6c577f87161f4fdb077fb952" title="Friendly name. /**&lt; TODO */.">friendName</a> = <a class="code" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a>(devInfo, devData, SPDRP_FRIENDLYNAME);
+    <span class="keywordflow">if</span> (wParam == DBT_DEVICEARRIVAL)
+        portInfo-&gt;<a class="code" href="struct_qext_port_info.html#a9bb0593dbd5bc1a0fc081e61268eaf46" title="Physical name. /**&lt; TODO */.">physName</a> = <a class="code" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a>(devInfo, devData, SPDRP_PHYSICAL_DEVICE_OBJECT_NAME);
+    portInfo-&gt;<a class="code" href="struct_qext_port_info.html#a47a6287c969ce9797b87f9ffdf36763c" title="Enumerator name. /**&lt; TODO */.">enumName</a> = <a class="code" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a>(devInfo, devData, SPDRP_ENUMERATOR_NAME);
+    QString hardwareIDs = <a class="code" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a>(devInfo, devData, SPDRP_HARDWAREID);
+    HKEY devKey = ::SetupDiOpenDevRegKey(devInfo, devData, DICS_FLAG_GLOBAL, 0, DIREG_DEV, KEY_QUERY_VALUE);
+    portInfo-&gt;<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a> = <a class="code" href="qextserialenumerator__win_8cpp.html#a7800c4d8c405c77e3d16fd357a969e7d">getRegKeyValue</a>(devKey, TEXT(<span class="stringliteral">&quot;PortName&quot;</span>));
+    QRegExp idRx(QLatin1String(<span class="stringliteral">&quot;VID_(\\w+)&amp;PID_(\\w+)&quot;</span>));
+    <span class="keywordflow">if</span> (hardwareIDs.toUpper().contains(idRx)) {
+        <span class="keywordtype">bool</span> dummy;
+        portInfo-&gt;<a class="code" href="struct_qext_port_info.html#a41e550f44b17021fbdd0ea3f2e896fcc" title="Vendor ID. /**&lt; TODO */.">vendorID</a> = idRx.cap(1).toInt(&amp;dummy, 16);
+        portInfo-&gt;<a class="code" href="struct_qext_port_info.html#aff45380c6ad0250cfd8628032f45e948" title="Product ID /**&lt; TODO */.">productID</a> = idRx.cap(2).toInt(&amp;dummy, 16);
+        <span class="comment">//qDebug() &lt;&lt; &quot;got vid:&quot; &lt;&lt; vid &lt;&lt; &quot;pid:&quot; &lt;&lt; pid;</span>
+    }
+    <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a84b36f6f71a2cbdc8b1996e58ee5b7a3"></a><!-- doxytag: member="qextserialenumerator_win.cpp::getDeviceProperty" ref="a84b36f6f71a2cbdc8b1996e58ee5b7a3" args="(HDEVINFO devInfo, PSP_DEVINFO_DATA devData, DWORD property)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QString <a class="el" href="qextserialenumerator__win_8cpp.html#a84b36f6f71a2cbdc8b1996e58ee5b7a3">getDeviceProperty</a> </td>
+          <td>(</td>
+          <td class="paramtype">HDEVINFO&#160;</td>
+          <td class="paramname"><em>devInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PSP_DEVINFO_DATA&#160;</td>
+          <td class="paramname"><em>devData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a>.</p>
+
+<p>Référencé par <a class="el" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    DWORD buffSize = 0;
+    ::SetupDiGetDeviceRegistryProperty(devInfo, devData, property, NULL, NULL, 0, &amp;buffSize);
+    BYTE *buff = <span class="keyword">new</span> BYTE[buffSize];
+    ::SetupDiGetDeviceRegistryProperty(devInfo, devData, property, NULL, buff, buffSize, NULL);
+    QString result = <a class="code" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a>(buff);
+    <span class="keyword">delete</span> [] buff;
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7800c4d8c405c77e3d16fd357a969e7d"></a><!-- doxytag: member="qextserialenumerator_win.cpp::getRegKeyValue" ref="a7800c4d8c405c77e3d16fd357a969e7d" args="(HKEY key, LPCTSTR property)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QString <a class="el" href="qextserialenumerator__win_8cpp.html#a7800c4d8c405c77e3d16fd357a969e7d">getRegKeyValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">HKEY&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>property</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a>.</p>
+
+<p>Référencé par <a class="el" href="qextserialenumerator__win_8cpp.html#a9ba012a27237667ee890ac4e4144b280">getDeviceDetailsWin()</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    DWORD size = 0;
+    DWORD type;
+    ::RegQueryValueEx(key, property, NULL, NULL, NULL, &amp;size);
+    BYTE *buff = <span class="keyword">new</span> BYTE[size];
+    QString result;
+    <span class="keywordflow">if</span> (::RegQueryValueEx(key, property, NULL, &amp;type, buff, &amp;size) == ERROR_SUCCESS)
+        result = <a class="code" href="qextserialenumerator__win_8cpp.html#aef6ac74ac2e3c102c2a77261471e6a80">TCHARToQString</a>(buff);
+    ::RegCloseKey(key);
+    <span class="keyword">delete</span> [] buff;
+    <span class="keywordflow">return</span> result;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a1fa6a8df113788ab3cc1c097e746eef3"></a><!-- doxytag: member="qextserialenumerator_win.cpp::lessThan" ref="a1fa6a8df113788ab3cc1c097e746eef3" args="(const QextPortInfo &amp;s1, const QextPortInfo &amp;s2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="qextserialenumerator__win_8cpp.html#a1fa6a8df113788ab3cc1c097e746eef3">lessThan</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_qext_port_info.html">QextPortInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Références <a class="el" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a">QextPortInfo::portName</a>.</p>
+<div class="fragment"><pre class="fragment">{
+    <span class="keywordflow">if</span> (s1.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>.startsWith(QLatin1String(<span class="stringliteral">&quot;COM&quot;</span>))
+            &amp;&amp; s2.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>.startsWith(QLatin1String(<span class="stringliteral">&quot;COM&quot;</span>))) {
+        <span class="keywordflow">return</span> s1.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>.mid(3).toInt()&lt;s2.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>.mid(3).toInt();
+    }
+    <span class="keywordflow">return</span> s1.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a> &lt; s2.<a class="code" href="struct_qext_port_info.html#ab28ecc59f84babdf486ab5fad74e024a" title="Port name. /**&lt; TODO */.">portName</a>;
+}
+</pre></div>
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a47a0d1cde9fb48b4e52aedd568342e28"></a><!-- doxytag: member="qextserialenumerator_win.cpp::deviceClassGuids" ref="a47a0d1cde9fb48b4e52aedd568342e28" args="[]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GUID <a class="el" href="qextserialenumerator__win_8cpp.html#a47a0d1cde9fb48b4e52aedd568342e28">deviceClassGuids</a>[]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment">
+{
+    
+    {0x4D36E978, 0xE325, 0x11CE, {0xBF, 0xC1, 0x08, 0x00, 0x2B, 0xE1, 0x03, 0x18}},
+    
+    {0x4D36E96D, 0xE325, 0x11CE, {0xBF, 0xC1, 0x08, 0x00, 0x2B, 0xE1, 0x03, 0x18}},
+    
+    {0xE0CBF06C, 0xCD8B, 0x4647, {0xBB, 0x8A, 0x26, 0x3B, 0x43, 0xF0, 0xF9, 0x74}},
+    
+    {0xDF799E12, 0x3C56, 0x421B, {0xB2, 0x98, 0xB6, 0xD3, 0x64, 0x2B, 0xC8, 0x78}}
+}
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Propriétés</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi Mars 24 2018 11:49:24 pour WISMAS par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
